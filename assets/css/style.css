@@ -1,0 +1,129 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans serif;
+}
+body{
+    background-image: url("../img/board9.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:70%;
+    background-attachment: fixed;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 15px 0 60px;
+    transform: scale(1.35)
+}
+span{
+    color: #FFF;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: #7B3F00;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0px 0;
+}
+.input-field{
+    color: #7B3F00;
+    display: flex;
+    flex-direction: column;
+}
+.input-field .input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 42px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #7B3F00;
+}
+i{
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s;
+    
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px #7B3F00;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+}
+.left{
+    display: flex;
+}
+label a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+span a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.box a:hover{ 
+    color: #7B3F00;
+}
+
+.character {
+    margin-left: -60px;
+}
+
+.container .top-header {
+    font-size: 200px;
+}
+
+.icon {
+    color:#7B3F00;
+}
+select {
+    border-radius: 30px; /* Kích thước độ cong của góc */
+    color: #7B3F00; /* Màu văn bản */
+    font-size: 16px; /* Kích thước chữ */
+    width: 200px; /* Độ rộng */
+    height: 30px; /* Độ cao */
+    border: 2px solid #7B3F00; /* Đường viền */
+    padding: 2px; /* Khoảng cách giữa đường viền và nội dung */
+    background: rgba(255,255,255,0.1);
+    text-align:center;
+    outline: none;
+}
