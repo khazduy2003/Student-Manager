@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./assets/img/logo.png" type="img/x-icon">
+    <title>Login to Exp</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" class="">
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+
+        <form id="loginForm" onsubmit="submitForm(event)">
+
+            <div class="top-header" style="margin-top: 60px;">
+                    
+                <header style="font-size: 50px;" >SCALER</header>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="username" name="username" class="input" placeholder="Tài khoản" style="color:#7B3F00;" required>
+                <i class="icon bx bx-user"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="password" id="password" name="password" class="input" placeholder="Mật khẩu" style="color:#7B3F00;" required>
+                <i class="icon bx bx-lock-alt"></i>
+            </div>
+
+            <div class="bottom">
+                <div class="" style="color:#7B3F00;font-size:15px">Bạn là:
+                    <input type="radio" name="#" value="student" checked>Học sinh
+                    <input type="radio" name="#" value="teacher" checked>Giáo viên
+                </div>
+                
+            </div> <br>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Đăng nhập"  style="color:#7B3F00; font-weight: bold;">
+            </div>
+
+        </form>
+        
+    <script>
+        function submitForm(event) {
+            // Ngăn chặn sự kiện mặc định của form
+            event.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Kiểm tra thông tin đăng nhập
+            if (username === "khanhduy" && password === "anhduydeptraivl") {
+                // Nếu thông tin đúng, chuyển hướng đến giao diện khác
+                window.location.href = "homePage.html";
+            } else {
+                // Nếu không đúng, thông báo lỗi
+                alert("Tài khoản hoặc Mật khẩu không chính xác. Vui lòng thử lại !");
+            }
+        }
+    </script>
+
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox"  id="check">
+                    <label for="check"> Yêu cầu nhớ tài khoản</label>
+                </div>
+                <div class="right">
+                    <label><a href="./forgotPass.html">Quên mật khẩu?</a></label>
+                    
+                    
+                </div>
+            </div>
+            <span>Bạn chưa có tài khoản? <a href="./signUp.html" >  Đăng ký</a> </span> 
+        </div>
+    </div>
+</body>
+</html>

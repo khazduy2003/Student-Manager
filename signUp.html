@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./assets/img/logo.png" type="img/x-icon">
+    <title>Register Member</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" class="">
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="top-header" style="margin-top: 70px;">
+                
+                <header style="font-size: 30px;">Đăng ký SCALER</header>
+            </div>
+
+
+            <div class="input-field">
+                <input type="text" id="username" name="username" class="input" placeholder="Tài khoản" style="color:#7B3F00;" required>
+                <i class="icon bx bx-user"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" name="password" class="input" placeholder="Mật khẩu" style="color:#7B3F00;" required>
+                <i class="icon bx bx-lock-alt"></i>
+            </div>
+            <div class="input-field">
+                <input type="text" id="email" name="email"  class="input" placeholder="Email" style="color:#7B3F00;" required>
+                <i class="icon fa-regular fa-envelope"></i>
+            </div>
+            
+            
+            <span class="character" style="color:#7B3F00;font-size:15px">Bạn là :  
+                <select required name="selecter" id="selecter" class="" style="margin-left: 40px;">
+                    <option value="" class="" selected disabled>Chọn vai trò của bạn</option>
+                    <option value="student" class="value">Học sinh</option>
+                    <option value="teacher" class="value">Giáo viên</option>
+                </select>
+                
+            </span>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Đăng ký" style="color:#7B3F00; font-weight: bold;">
+            </div>
+
+            <span>Bạn đã có tài khoản? <a href="./signIn.html" >  Đăng nhập</a> </span> 
+
+        </div>
+    </div>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+        }
+    </script>
+
+</body>
+
+</html>
